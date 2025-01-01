@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Glaxy Hub</a>
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#">Servers</a>
+            <a href="#">Contact</a>
+            <a href="#">Tournaments</a>
+            <a href="#">Store </a>
+            <a href="#">Login/Sign Up</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="https://i.pinimg.com/474x/9f/ec/7d/9fec7dff793a56ad550d17e1a0c26031.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Welcome to</h1>
+            <h3 class="typing-text"><span>Glaxy Hub</span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn" id="join-now">Join Now</a>
+        </div>
+    </section>
+    
+    <!-- New section for extra boxes below Join Now -->
+    <section class="extra-boxes">
+        <div class="box join-tournament">
+            <img src="https://static.thenounproject.com/png/886706-200.png" alt="Tournament Logo" class="box-img">
+            <a href="#">Join Tournament</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque magna ut ex hendrerit, et scelerisque felis fermentum. Aenean mollis, nunc nec sodales vulputate, erat risus tincidunt lorem.</p>
+        </div>
+        <div class="box visit-store">
+            <img src="https://cdn-icons-png.flaticon.com/512/181/181591.png" alt="Store Logo" class="box-img">
+            <a href="#">Visit Store</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque magna ut ex hendrerit, et scelerisque felis fermentum. Aenean mollis, nunc nec sodales vulputate, erat risus tincidunt lorem.</p>
+        </div>
+        <div class="box discord">
+            <img id="noob" src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6ac3c481f273141736_icon_clyde_black_RGB.png" alt="">
+            <a href="#">Join Discord</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque magna ut ex hendrerit, et scelerisque felis fermentum. Aenean mollis, nunc nec sodales vulputate, erat risus tincidunt lorem.</p>
+        </div>
+    </section>
+
+    <script>
+        // Get the 'Join Now' button element by its ID
+        const joinNowButton = document.getElementById('join-now');
+
+        // Add a click event listener to the button
+        joinNowButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action (e.g., page jump)
+            
+            // Calculate the scroll position for 80% of the total scroll height
+            const scrollPosition = document.documentElement.scrollHeight * 0.8;
+
+            // Scroll smoothly to 80% of the page height
+            window.scrollTo({
+                top: scrollPosition, // Scroll to 80% of the total height
+                behavior: 'smooth'   // Smooth scrolling
+            });
+        });
+    </script>
+</body>
+</html>
